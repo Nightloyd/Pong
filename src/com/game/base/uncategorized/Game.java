@@ -18,7 +18,7 @@ public class Game
     private GOPlayer player;
     private GOBall ball;
     private int playerScore;
-    private int enemyScore;
+    private int enemyScore; 
     
     public Game()
     {
@@ -29,7 +29,7 @@ public class Game
         ball = new GOBall(Display.getWidth() / 2 - GOBall.SIZE /2, Display.getHeight() /2 - GOBall.SIZE /2);
         player = new GOPlayer(0, Display.getHeight() /2 - GOPlayer.SIZEY /2, ball);
         
-        GOEnemy enemy = new GOEnemy(Display.getWidth() - GOEnemy.SIZEX, Display.getHeight() /2 - GOPlayer.SIZEY /2, ball);
+        GOEnemy enemy = new GOEnemy(Display.getWidth() - GOEnemy.SIZEX/2, Display.getHeight() /2 - GOPlayer.SIZEY /2, ball);
         GOWall wall1 = new GOWall(0, 0, Display.getWidth() * 2, GOWall.STDSIZE, ball);
         GOWall wall2 = new GOWall(0, Display.getHeight() - GOWall.STDSIZE / 2, Display.getWidth() * 2, GOWall.STDSIZE, ball);
         
